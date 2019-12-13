@@ -1,0 +1,286 @@
+body
+{
+    color: cornsilk;
+    font-family: 'Quattrocento', serif;
+    background-color: dodgerblue;
+    overflow: hidden;
+}
+
+main
+{
+    width: 80%;
+    margin: 100px auto 0 auto;
+}
+
+#containmenu
+{
+    position: absolute;
+    top: 100px;
+    right: 210px;
+    z-index: 1000;
+}
+
+#containmenu:hover
+{
+    cursor: pointer;
+}
+
+#navigation
+{
+    width: 100%;
+    font-size: 35px;
+    color: cornsilk;
+    text-transform: uppercase;
+    margin: 0 auto;
+    animation-fill-mode: forwards;
+    animation-duration: 1300ms;
+    position: absolute;
+    top: -300px;
+}
+
+@keyframes navdef {
+    from {
+        transform-origin: top;
+        top: -300px;
+    }
+  
+    to {
+        top: 200px;
+    }
+}
+
+@keyframes navdefreverse {
+    from {
+        transform-origin: top;
+        top: 200px;
+    }
+  
+    to {
+        top: -300px;
+    }
+}
+
+#navigation ul{
+    list-style-type: none;
+}
+
+#navigation ul li
+{
+    text-align: center;
+    text-decoration: none;
+}
+
+#navigation ul li a
+{
+    text-decoration: none;
+    color: cornsilk;
+}
+
+#navigation ul li a:hover
+{
+    text-shadow: 4px 3px 3px dimgrey;
+}
+
+#left
+{
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1100ms;
+}
+
+@keyframes leftbar {
+    from {
+        transform-origin: right;
+        width: 0%;
+        background-color: dodgerblue;
+    }
+  
+    to {
+        width: 30%;
+        background-color: tomato;
+    }
+}
+
+@keyframes leftbarreverse {
+    from {
+        transform-origin: right;
+        width: 30%;
+        background-color: tomato;
+    }
+  
+    to {
+        width: 0%;
+        background-color: dodgerblue;
+    }
+}
+
+
+#right
+{
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1100ms;
+}
+
+@keyframes rightbar {
+    from {
+        transform-origin: left;
+        width: 0%;
+        background-color: dodgerblue;
+    }
+  
+    to {
+        width: 30%;
+        background-color: tomato;
+    }
+}
+
+@keyframes rightbarreverse {
+    from {
+        transform-origin: left;
+        width: 30%;
+        background-color: tomato;
+    }
+  
+    to {
+        width: 0%;
+        background-color: dodgerblue;
+    }
+}
+
+h1
+{
+    position: relative;
+    z-index: 0;
+}
+
+.menubarre1, .menubarre2, .menubarre3
+{
+    border-radius: 3px;
+    background-color: cornsilk;
+    width: 48px;
+    height: 7px;
+    margin-top: 10px;
+    box-shadow: 4px 3px 3px dimgrey;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes slidein1 {
+    from {
+        transform-origin: left;
+    }
+  
+    to {
+        transform-origin: left;
+        transform: rotate(45deg);
+        box-shadow: 4px 3px 3px transparent;
+    }
+}
+
+@keyframes slidein1reverse {
+    from {
+        transform-origin: left;
+        transform: rotate(45deg);
+        box-shadow: 4px 3px 3px transparent;
+    }
+  
+    to {
+        transform-origin: left;
+        transform: rotate(0deg);
+        box-shadow: 4px 3px 3px dimgrey;
+    }
+}
+
+@keyframes slidein2 {
+    from {
+        transform-origin: left;
+        margin-left: 0px;
+    }
+  
+    to {
+        transform-origin: left;
+        margin-left: -30px;
+        background-color: transparent;
+        box-shadow: 4px 3px 3px transparent;
+    }
+}
+
+@keyframes slidein2reverse {
+    from {
+        transform-origin: left;
+        margin-left: -30px;
+        background-color: transparent;
+        box-shadow: 4px 3px 3px transparent;
+    }
+  
+    to {
+        transform-origin: left;
+        margin-left: 0px;
+        background-color: cornsilk;
+        box-shadow: 4px 3px 3px dimgrey;
+    }
+}
+
+@keyframes slidein3 {
+    from {
+        transform-origin: left;
+    }
+
+    to {
+        transform-origin: left;
+        transform: rotate(-45deg);
+        box-shadow: 4px 3px 3px transparent;
+    }
+}
+
+@keyframes slidein3reverse {
+    from {
+        transform-origin: left;
+        transform: rotate(-45deg);
+        box-shadow: 4px 3px 3px transparent;
+    }
+  
+    to {
+        transform-origin: left;
+        transform: rotate(0deg);
+        box-shadow: 4px 3px 3px dimgrey;
+    }
+}
+
+.hide{
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes slidehide {
+    from {
+        transform-origin: top;
+    }
+
+    to {
+        transform-origin: top;
+        color: transparent;
+    }
+}
+
+@keyframes slidehidereverse {
+    from {
+        transform-origin: top;
+        color: transparent;
+    }
+
+    to {
+        transform-origin: top;
+        color: cornsilk;
+    }
+}
+
